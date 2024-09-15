@@ -1,0 +1,169 @@
+/* Главный контент */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    margin-top: 70px;
+
+}
+header {
+    background-color: #333;
+    padding: 10px 0;
+    width: 100%; /* Занимает всю ширину экрана */
+    position: fixed; /* Фиксирует шапку */
+    top: 0; /* Располагает шапку в верхней части экрана */
+    z-index: 1000; /* Приоритет отображения поверх других элементов */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 50px; /* Высота логотипа */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* Расстояние между кнопками */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555; /* Цвет при наведении */
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+    
+    
+    justify-content: space-between; /* Логотип слева, текст справа */
+    text-align: right; /* Выравнивание текста по правому краю */
+    color:#000000;
+    text-align:right;
+    vertical-align:text-top;
+    font-size:70px;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    width:848px;
+}
+
+}
+.hero-text{
+    display: flex;
+    flex-direction: column; /* Надписи друг под другом */
+    align-items: flex-end; /* Прижать к правому краю */
+}
+.hero img {
+    height: 300px; /* Высота логотипа */
+    align-items:baseline;
+    gap: 20px;
+    padding: 50px;
+}
+.hero-title {
+    font-size: 24px;
+
+}
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    
+}
+
+.cta {
+    display: inline-block;
+    background-color: #00ffff;
+    color: #1a1a1a;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    align-self: center; /* Кнопка под надписями и прижата к правому краю */
+    gap: 50px;
+}
+
+.cta:hover {
+    background-color: #00cccc;
+    text-align: center;
+}
+
+.about-chatgpt, .how-to-use {
+    padding: 80px 0;
+    padding-left: 30px; /* Добавлен отступ слева */
+    text-align: center;
+    border-radius: 8px;
+   
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.about-chatgpt h2, .how-to-use h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 8px;
+   
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.about-chatgpt p, .how-to-use ol {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 30px; /* Добавлен отступ слева */
+    
+    border-radius: 8px;
+   
+    margin: 20px 0;*/
+    padding: 20px;*/
+}
+
+/*.how-to-use ol {
+    margin-left: 30px;
+}/*/
+footer{
+    text-align: center;
+    background-color: #333;
+    color: #ffffff;
+}
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Перестроение колонки */
+        text-align: center; /* Центровка текста */
+    }
+
+    .hero img {
+        margin: 0 auto; /* Центровка изображения */
+    }
+
+    .hero-text {
+        align-items: center; /* Центровка текста на маленьких экранах */
+    }
+
+    .cta {
+        align-self: center; /* Центровка кнопки на маленьких экранах */
+    }
+}
